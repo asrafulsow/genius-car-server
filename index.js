@@ -80,6 +80,34 @@ app.get('/', (req,res) =>{
     res.send('running my server')
 });
 
+app.get('/hello', (req, res) =>{
+  res.send('updated here')
+});
+
 app.listen(port, () =>{
     console.log("Running server port", port);
 })
+
+
+
+/*
+one time
+1.Heroko account open
+2.heroko software install
+
+Every Projects
+1.git init
+2.gitignore (node_modules , .env)
+3.push everything to git
+4.make sure you have this script: "start": "node index.js"
+5.make sure: put process.env.PORT in front of your port number
+6.heroko login
+7.heroko create(only one time for a project)
+8.command: git push heroku main
+
+-------
+update:
+1.save everything check locally
+2.git add, git commit-m, git push
+3.git push heroko main
+*/
